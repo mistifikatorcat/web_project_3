@@ -17,7 +17,7 @@
     max-width: 984px;
     min-height: 983px;
     display: flex;
-    /*justify-content: center;*/
+    justify-content: center;
     flex-direction: column;
     align-content: center;
     align-items: center;
