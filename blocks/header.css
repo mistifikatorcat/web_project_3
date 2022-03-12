@@ -1,0 +1,13 @@
+.header{
+    position: relative;
+}
+
+.header__logo-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo{
+    padding-top: 34px;
+    padding-bottom: 90px;
+}
