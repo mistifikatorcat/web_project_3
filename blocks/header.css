@@ -11,3 +11,26 @@
     padding-top: 34px;
     padding-bottom: 90px;
 }
+
+.header__lead{
+    margin: 0 auto;
+    max-width: 984px;
+    min-height: 983px;
+    display: flex;
+    /*justify-content: center;*/
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.header__title{
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 32px;
+}
