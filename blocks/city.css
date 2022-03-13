@@ -104,3 +104,58 @@
 .city__button:hover{
     background-color: #0063d2;
 }
+
+@media screen and (max-width: 968px) {
+
+    .city {
+        position: relative;
+        padding-bottom: 72px;
+        max-width: 100%;
+        margin: 0 auto;
+        padding-left: 24px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto 1fr;
+        grid-template-areas:
+        "title artist"
+        "image description"
+        "button description";
+        gap: 28px 46px;
+    }
+
+    .city__title {
+        display: flex;
+        align-items: center;
+        font-size: 42px;
+        line-height: 46px;
+        max-width: 100%;
+    }
+
+    .city__artist {
+        grid-area: artist;
+    }
+
+    .city__artist-header {
+        max-width: 50px;
+    }
+
+    .city__artist-content {
+        max-width: 352px;
+    }
+
+    .city__text {
+        max-width: 352px;
+        gap: 25px;
+        grid-area: description;
+    }
+
+    .city__paragraph {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .city__button {
+        grid-area: button;
+        padding: 13px 20px;
+    }
+}
