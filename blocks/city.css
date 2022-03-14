@@ -13,7 +13,6 @@
 
 .city__title{
     max-width: 460px;
-    min-height: 152px;
     margin: 0;
     grid-area: title;
     font-family: "Inter", Arial, sans-serif;
@@ -49,7 +48,7 @@
 .city__artist-content{
     margin: 0;
     max-width: 456px;
-    min-height: 22px;
+    /*min-height: 22px;*/
     font-family: "Inter", Arial, sans-serif;
     font-size: 18px;
     font-style: normal;
@@ -112,7 +111,6 @@
         padding-bottom: 72px;
         max-width: 100%;
         margin: 0 auto;
-        padding-left: 24px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto 1fr;
@@ -145,6 +143,7 @@
     }
 
     .city__image{
+        padding: 0;
         max-width: 100%;
         grid-area: image;
     }
@@ -169,13 +168,12 @@
 @media screen and (max-width: 600px) {
 
     .city {
-        position: relative;
         padding-bottom: 72px;
         max-width: 100%;
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto auto 1fr;
+        /*grid-template-rows: auto auto auto auto auto 1fr;*/
         grid-template-areas:
         "title" 
         "artist"
@@ -225,8 +223,8 @@
 
     .city__button {
         grid-area: button;
-        padding: 13px 40px;
-        max-width: 248px;
+        max-width: 288px;
+        width: 100%;
         max-height: 22px;
         margin: 0 auto;
     }

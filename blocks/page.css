@@ -17,14 +17,14 @@ html { font-family: 'Inter', sans-serif; }
     background: #2a2c2f;
 }
 
-/*@media screen and (max-width: 960px) {
+@media screen and (max-width: 960px) {
   .page{
-    max-width: 768px;
+    max-width: 960px;
   }
 }
 
 @media screen and (max-width: 600px){
   .page{
-    max-width: 320px;
+    max-width: 600px;
   }
-}*/
+}
