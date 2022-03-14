@@ -33,3 +33,16 @@
         overflow: hidden;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .grid{
+        max-width: 320px;
+    }
+
+    .grid__image-list{
+        max-width: 288px;
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+}

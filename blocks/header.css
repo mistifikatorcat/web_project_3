@@ -69,3 +69,31 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width: 600px){
+    .header__logo{
+        max-width: 200px;
+        height: 51.85px;
+        margin-top: 20px;
+        margin-bottom: 50.15px;
+    }
+
+    .header__lead {
+        max-width: 320px;
+      }
+    
+      .header__title {
+        max-width: 90%;
+        font-size: 40px;
+        line-height: 44px;
+        padding-bottom: 16px;
+      }
+    
+      .header__subtitle {
+        padding-bottom: 40px;
+        max-width: 90%;
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+}

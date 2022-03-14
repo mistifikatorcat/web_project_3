@@ -75,3 +75,32 @@
     background: #0063d2;
     z-index: 2;
   }
+
+  @media screen and (max-width: 600px) {
+      .contacts{
+          width: 100%;
+          min-height: 254px;
+          margin-top: 64px;
+      }
+      
+      .contacts__overlay{
+        gap: 16px;
+      }
+
+      .contacts__overlay-title{
+          font-size: 32px;
+          line-height: 35px;
+          padding: 0;
+      }
+
+      .contacts__overlay-subtitle{
+        font-size: 14px;
+        line-height: 16px;
+        padding: 0;
+      }
+
+      .contacts__button{
+          margin-bottom: 45px;
+      }
+
+  }

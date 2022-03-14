@@ -124,11 +124,10 @@
     }
 
     .city__title {
-        display: flex;
-        align-items: center;
         font-size: 42px;
         line-height: 46px;
         max-width: 100%;
+        grid-area: title;
     }
 
     .city__artist {
@@ -141,6 +140,11 @@
 
     .city__artist-content {
         max-width: 352px;
+    }
+
+    .city__image{
+        max-width: 100%;
+        grid-area: image;
     }
 
     .city__text {
@@ -157,5 +161,69 @@
     .city__button {
         grid-area: button;
         padding: 13px 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .city {
+        position: relative;
+        padding-bottom: 72px;
+        max-width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto 1fr;
+        grid-template-areas:
+        "title" 
+        "artist"
+        "image" 
+        "description"
+        "button";
+        gap: 30px;
+    }
+
+    .city__title {
+        font-size: 32px;
+        line-height: 35px;
+        max-width: 80%;
+        grid-area: title;
+    }
+
+    .city__artist {
+        grid-area: artist;
+    }
+
+    .city__artist-header {
+        max-width: 50px;
+    }
+
+    .city__artist-content {
+        max-width: 352px;
+    }
+    
+    .city__image{
+        padding: 0;
+        max-width: 100%;
+        grid-area: image;
+    }
+
+    .city__text {
+        max-width: 352px;
+        gap: 25px;
+        grid-area: description;
+    }
+
+    .city__paragraph {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .city__button {
+        grid-area: button;
+        padding: 13px 40px;
+        max-width: 248px;
+        max-height: 22px;
+        margin: 0 auto;
     }
 }
