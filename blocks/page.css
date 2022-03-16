@@ -9,9 +9,10 @@
     -moz-text-size-adjust: 100%;
     color: #ffffff;
     background: #2a2c2f 100vw;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
+    -webkit-background-size: 100vw;
+    -moz-background-size: 100vw;
+    -o-background-size: 100vw;
+    background-size: 100vw;
   }
 
 @media screen and (max-width: 960px) {
