@@ -8,7 +8,7 @@
     "image description"
     "button description";
     gap: 40px;
-    padding-bottom: 80px;
+    /*padding-bottom: 80px;*/
 }
 
 .city__title{
@@ -30,7 +30,6 @@
     flex-direction: column;
     grid-area: artist;
     max-width: 456px;
-    min-height: 67px;
 }
 
 .city__artist-header{
@@ -43,12 +42,13 @@
     text-align: left;
     text-transform: uppercase;
     color: #AAAAAA;
+    margin: 0;
+    padding-bottom: 8px;
 }
 
 .city__artist-content{
     margin: 0;
     max-width: 456px;
-    /*min-height: 22px;*/
     font-family: "Inter", Arial, sans-serif;
     font-size: 18px;
     font-style: normal;
@@ -87,8 +87,8 @@
     text-decoration: none;
     padding: 13px 20px;
     color: #ffffff;
-    max-width: 248px;
-    max-height: 22px;
+    max-width: 208px;
+    max-height: 26px;
     border-radius: 4px;
     font-family: "Inter", Arial, sans-serif;
     font-style: normal;
@@ -108,17 +108,16 @@
 
     .city {
         position: relative;
-        padding-bottom: 72px;
+        padding-bottom: 0;
         max-width: 100%;
         margin: 0 auto;
-        display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto 1fr;
         grid-template-areas:
         "title artist"
         "image description"
         "button description";
-        gap: 28px 46px;
+        gap: 28px 48px;
     }
 
     .city__title {
@@ -161,19 +160,15 @@
 
     .city__button {
         grid-area: button;
-        padding: 13px 20px;
     }
 }
 
 @media screen and (max-width: 600px) {
 
     .city {
-        padding-bottom: 72px;
-        max-width: 100%;
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr;
-        /*grid-template-rows: auto auto auto auto auto 1fr;*/
         grid-template-areas:
         "title" 
         "artist"
@@ -184,20 +179,25 @@
     }
 
     .city__title {
+        margin: 0 16px;
         display: flex;
         align-items: center;
         font-size: 32px;
         line-height: 35px;
         max-width: 80%;
         grid-area: title;
+     
     }
 
     .city__artist {
+        margin: 0 16px;
         grid-area: artist;
+       
     }
 
     .city__artist-header {
         max-width: 50px;
+       
     }
 
     .city__artist-content {
@@ -205,12 +205,12 @@
     }
     
     .city__image{
-        padding: 0;
-        max-width: 100%;
+        width: 100%;
         grid-area: image;
     }
 
     .city__text {
+        margin: 0 16px;
         max-width: 352px;
         gap: 25px;
         grid-area: description;
@@ -223,8 +223,9 @@
 
     .city__button {
         grid-area: button;
-        max-width: 288px;
         width: 100%;
+        max-width: 288px;
+        padding: 13px 40px;
         max-height: 22px;
         margin: 0 auto;
     }

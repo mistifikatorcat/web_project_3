@@ -2,7 +2,7 @@
     background: #2a2c2f;
     margin: 0 auto;
     max-width: 1184px;
-    min-height: 740px;
+    max-height: 740px;
     background-image: url(../images/about__background.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -14,19 +14,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 243px 264px;
+    /*padding: 243px 264px;*/
     text-align: center;
-    transition: opacity 1s ease-out;
+    opacity: 0.8;
+    transition: opacity 1s ease-in-out;
 }
 
 .contacts__overlay:hover{
     background: #2a2c2f;
-    opacity: 0.8;
+    opacity: 0.5;
     z-index: 1;
 }
 
 .contacts__overlay-title{
-    margin: 0;
+    margin: 243px 264px 32px;
     font-family: "Inter", Arial, sans-serif;
     font-size: 72px;
     font-style: normal;
@@ -38,8 +39,6 @@
 
 .contacts__overlay-subtitle{
     margin: 0;
-    padding-top: 32px;
-    padding-bottom: 32px;
 }
 
 .contacts__address{
@@ -79,11 +78,11 @@
   @media screen and (max-width: 960px) {
       .contacts{
           width: 100%;
-          min-height: 746px;
+          max-height: 746px;
       }
 
       .contacts__overlay-title{
-          margin-top: 246px;
+          margin: 246px 56px 32px;
       }
 
       .contacts__button{
@@ -93,19 +92,17 @@
 
   @media screen and (max-width: 600px) {
       .contacts{
-          width: 100%;
-          min-height: 254px;
           margin-top: 64px;
       }
       
       .contacts__overlay{
+        min-height: 254px;
         gap: 16px;
         padding: 0;
       }
 
       .contacts__overlay-title{
-          margin-top: 46px;
-          margin-bottom: 16px;
+          margin: 46px 16px 16px;
           font-size: 32px;
           line-height: 35px;
           padding: 0;
@@ -117,9 +114,18 @@
         line-height: 16px;
         padding: 0;
       }
+      .contacts__address{
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+      }
 
       .contacts__button{
-          margin-bottom: 45px;
+          margin: 16px 94px 45px 89px;
       }
 
   }

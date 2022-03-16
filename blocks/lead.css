@@ -29,6 +29,7 @@
     text-align: center;
     margin: 0;
     padding-bottom: 64px;
+    max-width: 720px;
 }
 
 .lead__image{

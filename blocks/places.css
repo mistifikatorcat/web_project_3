@@ -11,6 +11,7 @@
     .places{
         max-width: 768px;
         padding-top: 88px;
+        padding-bottom: 92px;
     }
 
     .places__wrapper{
@@ -24,13 +25,13 @@
 
 @media screen and (max-width: 600px) {
     .places{
-        max-width: 320px;
+        max-width: 100%;
         padding-top: 62px;
+        padding-bottom: 0;
     }
 
     .places__wrapper{
         max-width: 100%;
-        margin: 0 auto;
-        gap: 63px;
+        gap: 50px;
     }
 }
