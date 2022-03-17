@@ -42,12 +42,12 @@
     }
 
     .lead__title{
-        width: 720px;
+        max-width: 720px;
     }
 
     .lead__subtitle{
-        width: 720px;
-        padding-bottom: 36px;
+        max-width: 720px;
+        padding-bottom: 34px;
     }
 
     .lead__image{

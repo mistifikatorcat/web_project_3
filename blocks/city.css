@@ -8,7 +8,7 @@
     "image description"
     "button description";
     gap: 40px;
-    /*padding-bottom: 80px;*/
+    padding-bottom: 93px;
 }
 
 .city__title{
@@ -85,10 +85,11 @@
 .city__button{
     background-color: #0278fe;
     text-decoration: none;
-    padding: 13px 20px;
+    padding: 13px 0;
     color: #ffffff;
     max-width: 208px;
     max-height: 26px;
+    padding: 13px 20px;
     border-radius: 4px;
     font-family: "Inter", Arial, sans-serif;
     font-style: normal;
@@ -117,7 +118,7 @@
         "title artist"
         "image description"
         "button description";
-        gap: 28px 48px;
+        grid-gap: 48px 28px;
     }
 
     .city__title {
@@ -223,10 +224,10 @@
 
     .city__button {
         grid-area: button;
-        width: 100%;
-        max-width: 288px;
         padding: 13px 40px;
-        max-height: 22px;
+        max-width: 208px;
+        width: 100%;
         margin: 0 auto;
+        
     }
 }
