@@ -9,6 +9,10 @@
     max-width: 100%;
 }
 
+.places__city{
+    margin-bottom: 80px;
+}
+
 @media screen and (max-width: 960px) {
     .places{
         max-width: 720px;
@@ -22,6 +26,9 @@
         flex-direction: column;
         gap: 72px;
     }
+    .places__city{
+        margin-bottom: 72px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -34,5 +41,9 @@
     .places__wrapper{
         max-width: 100%;
         gap: 50px;
+    }
+
+    .places__city{
+        margin-bottom: 50px;
     }
 }
