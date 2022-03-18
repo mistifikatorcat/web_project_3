@@ -8,7 +8,7 @@
     "image description"
     "button description";
     gap: 40px;
-    padding-bottom: 93px;
+    margin-bottom: 80px;
 }
 
 .city__title{
@@ -148,7 +148,7 @@
     }
 
     .city__text {
-        max-width: 352px;
+        /*max-width: 352px;*/
         gap: 25px;
         grid-area: description;
     }
@@ -210,7 +210,6 @@
 
     .city__text {
         margin: 0 16px;
-        max-width: 352px;
         gap: 25px;
         grid-area: description;
     }
