@@ -85,7 +85,6 @@
 .city__button{
     background-color: #0278fe;
     text-decoration: none;
-    padding: 13px 0;
     color: #ffffff;
     max-width: 208px;
     max-height: 26px;
@@ -168,7 +167,6 @@
 
     .city {
         margin: 0 auto;
-        display: grid;
         grid-template-columns: 1fr;
         grid-template-areas:
         "title" 
