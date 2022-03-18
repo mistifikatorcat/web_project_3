@@ -8,6 +8,7 @@
 }
 
 .lead__title{
+    max-width: 793px;
     font-family: "Inter", Arial, sans-serif;
     font-size: 96px;
     font-style: normal;
